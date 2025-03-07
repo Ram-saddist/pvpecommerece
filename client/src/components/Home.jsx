@@ -45,7 +45,7 @@ const Home = () => {
                     <div key={product._id} style={{ border: "1px solid black", padding: "10px" }}>
                         <h3>{product.name}</h3>
                         <p>{product.description}</p>
-                        <p>${product.price}</p>
+                        <p>Rs.{product.price}</p>
                         <p><img src={product.imageUrl} alt={product.name} /></p>
                         {user && user.role === "user" && (
                             <button onClick={() => addToCart(product._id)}>Add to Cart</button>
